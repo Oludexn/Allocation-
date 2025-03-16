@@ -1,0 +1,129 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Check Your Cintos Allocation</title>
+    <style>
+        @keyframes fadeIn {
+            from { opacity: 0; transform: translateY(-10px); }
+            to { opacity: 1; transform: translateY(0); }
+        }
+
+        body {
+            font-family: Arial, sans-serif;
+            background-color: #f0f8ff; /* Light Blue */
+            text-align: center;
+            padding: 20px;
+        }
+
+        .container {
+            background: white;
+            padding: 20px;
+            border-radius: 10px;
+            box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.1);
+            display: inline-block;
+            width: 90%;
+            max-width: 400px;
+            animation: fadeIn 1s ease-in-out;
+        }
+
+        .logo img {
+            width: 80px;
+            border-radius: 50%;
+            margin-bottom: 10px;
+            animation: fadeIn 1.5s;
+        }
+
+        h2 {
+            color: #007bff; /* Blue */
+            animation: fadeIn 1s ease-in-out;
+        }
+
+        input {
+            padding: 10px;
+            width: 90%;
+            margin: 10px 0;
+            border: 1px solid #007bff;
+            border-radius: 5px;
+        }
+
+        button {
+            padding: 10px 20px;
+            background-color: #007bff;
+            color: white;
+            border: none;
+            border-radius: 5px;
+            cursor: pointer;
+            font-size: 16px;
+            transition: background-color 0.3s ease-in-out;
+        }
+
+        button:hover {
+            background-color: #0056b3;
+        }
+
+        .result {
+            margin-top: 20px;
+            font-size: 18px;
+            color: #333;
+            animation: fadeIn 1s ease-in-out;
+        }
+
+        .dates {
+            margin-top: 30px;
+            font-size: 14px;
+            color: gray;
+        }
+
+        .support {
+            margin-top: 20px;
+            font-size: 14px;
+            color: gray;
+        }
+
+        .support b {
+            color: black;
+        }
+
+        .developer {
+            margin-top: 10px;
+            font-size: 14px;
+            font-weight: bold;
+            color: #007bff;
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <!-- Logo -->
+        <div class="logo">
+            <img src="https://pbs.twimg.com/profile_images/1890034437011931136/mX29AbWR.jpg" alt="Cintos Logo">
+        </div>
+
+        <h2>Check Your Cintos Allocation</h2>
+        <input type="text" id="walletInput" placeholder="Enter Wallet Address">
+        <button onclick="searchWallet()">Check Allocation</button>
+        <div id="result" class="result"></div>
+
+        <!-- Important Dates -->
+        <div class="dates">
+            <p><b>17th March, 2025</b> - Distribution to Wallet</p>
+            <p><b>19th March, 2025</b> - TGE and Listing</p>
+        </div>
+
+        <!-- Support the Developer Section -->
+        <div class="support">
+            <p>Support the Developer:</p>
+            <p><b>0xCa48Cbe4b5A48dC8e3C5a02F502A0f2716F1f334</b></p>
+        </div>
+
+        <!-- Developer Credit -->
+        <div class="developer">
+            Developed by @Oludexn
+        </div>
+    </div>
+
+    <script src="search.js"></script>  <!-- Calls search.js -->
+</body>
+</html>
